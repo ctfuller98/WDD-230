@@ -22,6 +22,7 @@ main {
 }
 main h2{
     border-bottom: 1px solid black;
+    font-family: 'Corben', cursive;
 }
 .profile {
     float:right;
