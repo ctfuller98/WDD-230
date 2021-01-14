@@ -1,7 +1,6 @@
-
 body {
     background-color: rgb(135, 246, 182);
-    font-family: 'Corben', cursive;
+    font-family:'Courier New', Courier, monospace;  
 }
 #index-main {
  max-width: 800px;
@@ -16,6 +15,7 @@ header, footer {
 header h1{
     font-size: 32px;
     padding-left: 95px;
+    font-family: 'Corben', cursive;
 }
 main {
     padding: 0 15px;
