@@ -1,6 +1,11 @@
-* {
-    box-sizing: border-box;
-  }
+#holder{
+    max-width: 72em;
+    margin: 0 auto 5em;
+}
+main {
+    display: grid;
+    grid-template-columns: auto;
+}
 .photo {
     width: auto;
     height: 500px;
@@ -35,26 +40,14 @@ body h1 {
     width: 100%
   }
 
-  @media (min-width: 900px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
+@media only screen and (min-width: 45em){
+    main {
+        grid-template-columns: auto auto;
+        gap: 1.5em;
     }
-    
-    .div1 {
-        width: 33%;
-        margin: auto;
-    }
-    
-    .div2 {
-        width: 33%;
-        margin: auto;
-    }
-
-    .div3 {
-        width: 33%;
-        margin: auto;
-    }
-    body h1 {
-        font-size: 40px;}
 }
+ 
+  @media only screen and  (min-width: 74em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }}
