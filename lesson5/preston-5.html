@@ -8,13 +8,18 @@
     <link rel='stylesheet' href='css/preston.css'>
     <link rel="shortcut icon" href='images/iconfinder_weather-02_1530391.ico'>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
-    <script src = 'scripts/scripts.js'></script>
+    <script src = 'scripts/scripts/scripts.js'></script>
 </head>
 <body>
-  <div class='show', id = 'promo'>
+  <!--<div class='show', id = 'promo'>
     <p>Saturday = Preston Pancakes in the Park! <br> <b>9:00 a.m. Saturday</b> 
       at the city park pavilion!</p>
       <button onclick = "toggleMenu()">X</button>
+  </div>
+  -->
+  <div class = 'hide' id="overlay" onclick = "off()">
+    <div id="text">Preston Pancakes in the Park! <br> <b>9:00 a.m. Saturday</b> 
+        at the city park pavilion!</div>
   </div>
     <header>
       
@@ -39,17 +44,65 @@
                 </ul>
             </nav>
     <div class='content'>
-    <h2>Preston Idaho</h2>
     <div class='herodiv'>
-      <div class='heroimg'>Hero w/weather summary</div>
+        <h2>Preston Idaho</h2>
+      <picture>
+          <img src = "images/pexels-adam-kontor-539282.jpg" alt ='banner image'>
+        </picture>
+          
+
       <section class="weathersummary">
         <h3>Weather Right Now</h3>
-        <p>Label: Value</p>
-        <p>Label: Value</p>
-        <p>Label: Value</p>
+        <p>30&#176; F</p>
+        <p>Wind: 8MPH</p>
+        <p>Humidity: 69%</p>
+        
       </section>
     </div> 
-    <div class='content-item'>5 day forecast</div>
+    <div class='five-day'>
+        <h2>Five Day Forecast</h2>
+        <div class='forecast-item'>
+            <p>Mon</p>
+            <picture>
+                <img src = "images/sunny.png" alt = 'sunny'>
+            </picture>
+            <h2>45&#176;F</h2>
+            <p> 15&#176;F</p>
+        </div>
+        <div class='forecast-item'>
+            <p>Tue</p>
+            <picture>
+                <img src = "images/sunny.png" alt = 'sunny'>
+            </picture>
+            <h2>45&#176;F</h2>
+            <p> 15&#176;F</p>
+        </div>
+        <div class='forecast-item'>
+            <p>Wed</p>
+            <picture>
+                <img src = "images/sunny.png" alt = 'sunny'>
+            </picture>
+            <h2>45&#176;F</h2>
+            <p> 15&#176;F</p>
+        </div>
+        <div class='forecast-item'>
+            <p>Thu</p>
+            <picture>
+                <img src = "images/sunny.png" alt = 'sunny'>
+            </picture>
+            <h2>45&#176;F</h2>
+            <p> 15&#176;F</p>
+        </div>
+        <div class='forecast-item'>
+            <p>Fri</p>
+            <picture>
+                <img src = "images/sunny.png" alt = 'sunny'>
+            </picture>
+            <h2>45&#176;F</h2>
+            <p> 15&#176;F</p>
+        </div>
+    </div>
+    
     <div class='content-item'>Article</div>     
     </div>
 

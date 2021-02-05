@@ -23,7 +23,8 @@ window.addEventListener('load', () =>{
     }    
     else if (dow == 5) {
         dow = 'Friday'
-        document.getElementById("overlay").classList.toggle("show");
+        var overlay = document.getElementById("overlay");
+        overlay.classList.toggle("hide");
     }
     else if (dow == 6) {
         dow = 'Saturday'
@@ -67,9 +68,17 @@ window.addEventListener('load', () =>{
 
     let formatted_date = dow + ", " + current_datetime.getDate() + " " +  month  +" " + current_datetime.getFullYear()
     document.getElementById('datetime').innerHTML = formatted_date
+    
 });
 function toggleMenu() {
     var day = new Date();
 
-    document.getElementById("promo").classList.toggle("hide");
+    document.getElementById("overlay").style.display = "none";
 }
+function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
