@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather for Farmers</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet' href='css/preston.css'>
+    <link rel="shortcut icon" href='images/iconfinder_weather-02_1530391.ico'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+    <script src = "scripts/scripts.js"></script>
+    <script src = 'scripts/windchill.js'></script>
+</head>
+<body>
+  <div class = 'hide' id="overlay" onclick = "off()">
+    <div id="text">Preston Pancakes in the Park! <br> <b>9:00 a.m. Saturday</b> 
+        at the city park pavilion!</div>
+  </div>
+    <header>
+      
+    <picture>
+		<img src="images/Logo.jpg" alt="logo">
+	</picture>
+	<section class="headings">
+		<h1>Weather for Farmers</h1>
+		<div class="m">Accurate reporting, rain or shine!</div>
+	</section>
+</header>
+    <main>
+        <nav>
+            <ul class='navigation'>
+                <li><a class= 'ham' href = '#'>&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class = 'active'>Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+    <div class='content'>
+    <div class='herodiv'>
+        <h2>Preston Idaho</h2>
+      <picture>
+        <img src = "images/wdd230_image_franklinOriginal.jpeg" alt = 'banner img' sizes ="50vw"
+        srcset = "images/img200.jpg 200w,
+                  images/img500.jpg 500w, 
+                  images/img800.jpg 800w, 
+                  images/img1100.jpg 1100w">
+        </picture>
+          
+
+      <section class="weathersummary">
+        <h3>Weather Right Now</h3>
+        <p>Currently: Snow Showers</p>
+        <p id = 'temp'>Current Temp: 85&#176; F</p>
+        <p id = 'windchill'>Wind Chill: </p>
+        <p id = 'wind'>Wind: 8MPH</p>
+        <p>Humidity: 69%</p>
+        
+      </section>
+    </div> 
+    <div class='five-day'>
+        <h2>Five Day Forecast</h2>
+        <div class='forecast-item'>
+            <p>Mon</p>
+            <picture>
+                <img src = "images/sunny.png" alt = 'sunny'>
+            </picture>
+            <h2>45&#176;F</h2>
+            <p> 15&#176;F</p>
+        </div>
+        <div class='forecast-item'>
+            <p>Tue</p>
+            <picture>
+                <img src = "images/sunny.png" alt = 'sunny'>
+            </picture>
+            <h2>45&#176;F</h2>
+            <p> 15&#176;F</p>
+        </div>
+        <div class='forecast-item'>
+            <p>Wed</p>
+            <picture>
+                <img src = "images/sunny.png" alt = 'sunny'>
+            </picture>
+            <h2>45&#176;F</h2>
+            <p> 15&#176;F</p>
+        </div>
+        <div class='forecast-item'>
+            <p>Thu</p>
+            <picture>
+                <img src = "images/sunny.png" alt = 'sunny'>
+            </picture>
+            <h2>45&#176;F</h2>
+            <p> 15&#176;F</p>
+        </div>
+        <div class='forecast-item'>
+            <p>Fri</p>
+            <picture>
+                <img src = "images/sunny.png" alt = 'sunny'>
+            </picture>
+            <h2>45&#176;F</h2>
+            <p> 15&#176;F</p>
+        </div>
+    </div>
+    
+    <div class='content-item'>Article</div>     
+    </div>
+
+</main>
+<footer>
+
+<div class="title">
+    <p>
+      Follow Us!
+    </p>
+  </div>
+  <div class="social">
+    <a href="https://www.facebook.com/" target="_blank">
+      <img
+        src="https://cdn.glitch.com/350c922a-f312-4e66-bbcf-4777c7c3c04b%2Ffacebook.png?v=1580405441671"
+        alt="facebook"
+    /></a>
+    <a href="https://www.instagram.com/" target="_blank">
+      <img
+        src="https://cdn.glitch.com/350c922a-f312-4e66-bbcf-4777c7c3c04b%2Finstagram.png?v=1580405441578"
+        alt="Instagram Icon"
+    /></a>
+    <a href="https://twitter.com/" target="_blank"
+      ><img
+        src="https://cdn.glitch.com/350c922a-f312-4e66-bbcf-4777c7c3c04b%2Ftwitter.png?v=1580405441994"
+        alt="Twitter Icon"
+      />
+    </a>
+  </div>
+  <div class='map'>
+      This is where the map goes
+  </div>
+  <div class='time'>
+    <p><span id="datetime"></span></p>
+  </div>
+    </footer>
+</body>
+</html>
