@@ -186,7 +186,7 @@ footer {
     border: 1px solid black;
     background-color: aliceblue;
 }
-@media only screen and (min-width: 34.5em){
+@media only screen and (min-width: 375px){
     header img {
 		width: 80%;
     }
