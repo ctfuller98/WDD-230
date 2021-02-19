@@ -186,16 +186,19 @@ footer {
     border: 1px solid black;
     background-color: aliceblue;
 }
-@media only screen and (min-width: 375px){
+@media only screen and (min-width: 376px){
     header img {
-		width: 80%;
+		width: 50%;
+    }
+    header {
+        width: 100%;
     }
     body {
         max-width: 100%;
     }
 
 	.headings h1 {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	.m {

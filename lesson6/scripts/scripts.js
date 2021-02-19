@@ -81,4 +81,11 @@ function on() {
     document.getElementById('datetime').innerHTML = formatted_date
     
 };
+WebFont.load({
+    google: {
+      families: [
+        'Raleway'
+      ]
+    }
+  });
 });
