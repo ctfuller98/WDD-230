@@ -88,17 +88,17 @@ nav {
 	max-width: 100%;
 	background-color: #283618;
 }
-.navigation {
+#navigation {
 	list-style: none;
 	padding: 0;
 }
-.navigation li:first-child {
+#navigation li:first-child {
 	display: block;
 }
-.navigation li {
+#navigation li {
 	display: none;
 }
-.navigation a {
+#navigation a {
 	display: block;
 	padding: 0.75rem;
 	text-align: left;
@@ -111,9 +111,9 @@ nav {
 	display: block;
 }
 
-.navigation a:hover {
+#navigation a:hover {
     color:black;
-    background-color: #DDA15E
+       background-color: #DDA15E;
 }
 .active {
     background-color: rgba(3, 105, 17, 0.835)
@@ -141,8 +141,14 @@ nav {
     background-color: white;
     border: 1px solid #bbb;
     margin-top:20px;
-    
-}    
+    text-align: justify;   
+}   
+.article h3 {
+    font-size: 1.5rem;
+}
+.article img {
+    display: none;
+}
 /*------FOOTER--------------*/
 footer {
     display: grid;
@@ -202,6 +208,9 @@ footer {
     border: 1px solid black;
     background-color: aliceblue;
 }
+
+/*-----------------------------------MEDIUM--------------------------------------------
+-------------------------------------VIEW-----------------------------------------------*/
 @media only screen and (min-width: 376px){
     header img {
 		width: 50%;
@@ -222,23 +231,23 @@ footer {
 		font-size: larger;
 		margin-left: 17px;
 	}
-/*-------------------NAVIGATION MEDIUM---------------------------------*/
+/*-------------------NAVIGATION---------------------------------*/
     nav {
         max-width: 100%;
     }
 
-    .navigation {
+    #navigation {
 		display: flex;
         max-width: 100%;
 	}
-	.navigation li {
+	#navigation li {
 		display: block;
 		flex: 1 1 auto;
 	}
-	.navigation a {
+	#navigation a {
 		text-align: center;
 	}
-	.navigation li:first-child {
+	#navigation li:first-child {
 		display: none;
 	}
 
@@ -249,10 +258,25 @@ footer {
         font-size: 55px;
         color: white;
     }
+    .article img { 
+        display: block;
+        float: right;  
+        margin: 20px; 
+        width: 50%;
+        height: 50%;
+        box-shadow: 0 0 30px #111;
+
+    } 
+    .article p { 
+        text-align: justify; 
+    } 
 }
+
+/*-----------------------------LARGE-----------------------------------------
+--------------------------------VIEW-------------------------------------------*/
 @media only screen and (min-width: 54.5em){
     #navigation {
-        width: 800px;
+        width: 100%;
         margin: 16px auto; 
     }
     footer {
@@ -275,6 +299,7 @@ footer {
     .twitter {
         margin: 0 auto;
     }
+
     .map {
         padding: 10px;
         background-color:white;
