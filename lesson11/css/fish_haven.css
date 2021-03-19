@@ -1,0 +1,344 @@
+body {
+	background-color: #FEFAE0;
+	padding: 0;
+    max-width: 100%;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;  
+}
+.content {
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+}
+/*-----------HEADING --------------------------*/
+header {
+	background-color: #fff;
+	display: grid;
+    grid-template-columns: auto auto;
+	align-items:center;
+	justify-content:center;
+}
+header picture {
+	width: 80px;
+	height: auto;
+}
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+.headings h1 {
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+}
+.m {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: forestgreen;
+	margin-left: 20px;
+	font-size: .9rem;
+}
+/*-----------------NAVIGATION------------------------*/
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #283618;
+}
+#navigation {
+	list-style: none;
+	padding: 0;
+}
+#navigation li:first-child {
+	display: block;
+}
+#navigation li {
+	display: none;
+}
+#navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+}
+
+.responsive li {
+	display: block;
+}
+
+#navigation a:hover {
+    color:black;
+       background-color: #DDA15E;
+}
+.active {
+    background-color: rgba(3, 105, 17, 0.835)
+}
+.herodiv {
+    position: relative;    
+    margin: 10px auto;
+    width: 100%;
+    height: 100%;
+}
+.herodiv h2 {
+    font-size: 2.3rem;
+}
+
+picture img {
+    width: 100%;
+}
+.weathersummary {
+    display: block;
+    background: radial-gradient(#BC6C25, forestgreen);
+    border: 5px solid #000;
+    padding: 25px;
+    box-shadow: 0 0 30px #111;
+    font-size: 1.3rem;
+}
+/*------------------------------------FORECAST------------------------------------*/
+.five-day {
+    display: block;
+    text-align: center;
+}
+.five-day h3 {
+    font-size: 2rem;
+}
+.card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width:75%;
+    margin: 0 auto;
+    border: 5px solid black;
+    background: white;
+    gap: 0px;
+}
+.card h4 {
+    font-size: 1.7rem;
+}
+.hightem {
+    font-size: 1.5rem;
+}
+.card img {
+    grid-column: 2;
+    grid-row: 1/3;
+    margin: auto auto;
+    width:100%;
+    height: auto;
+}
+/*-----------------------------------------ARTICLE--------------------------------------------*/
+.article {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #bbb;
+    margin-top:20px;
+    text-align: justify;   
+}   
+.article h3 {
+    font-size: 1.5rem;
+}
+.article img {
+    display: none;
+}
+/*----------------------FOOTER-------------------*/
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  .title {
+    color:black;
+    font-size:rem;
+    margin: auto;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.facebook{ 
+    margin: 0 auto;
+}
+.insta {
+    margin: 0 auto;
+}
+.twitter {
+    margin: 0 auto;
+}
+.map{
+    padding: 10px;
+    background-color:white;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin: 20px auto;
+    border: 2px solid black;
+    width: 75%;
+}
+.map iframe{
+    width: 100%;
+}
+.link a:link{
+    text-decoration:none;
+    text-align:center;
+    font-size:12px;
+    padding-top:20px;
+    margin-top:20px;
+  }
+
+.time {
+    margin-left: 20px;
+    grid-column: 1/4;
+}
+
+/*-----------------------------------MEDIUM--------------------------------------------
+-------------------------------------VIEW-----------------------------------------------*/
+@media only screen and (min-width: 376px){
+    header picture  {
+		width: 50%;
+    }
+    header picture img {
+        margin-left: 200px;
+    }
+    body {
+        max-width: 100%;
+    }
+
+	.headings h1 {
+		font-size: 2rem;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+/*-------------------NAVIGATION---------------------------------*/
+    nav {
+        max-width: 100%;
+    }
+
+    #navigation {
+		display: flex;
+        max-width: 100%;
+	}
+	#navigation li {
+		display: block;
+		flex: 1 1 auto;
+	}
+	#navigation a {
+		text-align: center;
+	}
+	#navigation li:first-child {
+		display: none;
+	}
+
+    .herodiv h2 {
+        position: absolute;
+        top: 125px;
+        right: 50px;
+        font-size: 55px;
+        color: white;
+    }
+    .article img { 
+        display: block;
+        float: right;  
+        margin: 20px; 
+        width: 50%;
+        height: 50%;
+        box-shadow: 0 0 30px #111;
+
+    } 
+    .article p { 
+        text-align: justify; 
+    } 
+}
+
+/*-----------------------------LARGE-----------------------------------------
+--------------------------------VIEW-------------------------------------------*/
+@media only screen and (min-width: 54.5em){
+    #navigation {
+        width: 100%;
+        margin: 16px auto; 
+    }
+    header picture{
+        width: 45%;
+        text-align: right;
+    }
+    header picture img {
+        text-align: right;
+    }
+    footer {
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto ;
+      }
+    .title {
+        color:black;
+        font-size:30px;
+        margin: auto;
+        grid-column: 3/6;
+        grid-row: 1/2;
+    }
+    .facebook{ 
+        margin: 0 auto;
+    }
+    .insta {
+        margin: 0 auto;
+    }
+    .twitter {
+        margin: 0 auto;
+    }
+
+    .map {
+        padding: 10px;
+        background-color:white;
+        grid-column: 1/3;
+        grid-row: 1/4;
+        margin: 20px auto;
+        border: 2px solid black;
+        width: 75%;
+    }
+    .map iframe{
+        width: 100%;
+    }
+    .link a:link{
+        text-decoration:none;
+        text-align:center;
+        font-size:12px;
+        padding-top:20px;
+        margin-top:20px;
+    }
+    .time {
+        margin-left: 20px;
+        grid-column: 1/4;
+    }
+    .five-day {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    .card {
+        grid-row: 2;
+        display: block;
+        width:90%;
+        margin: 0 auto;
+        border: 5px solid black;
+        background: white;
+    }
+    .card h4 {
+        font-size: 1.7rem;
+    }
+    .hightem {
+        font-size: 1.3rem;
+    }
+    .card img {
+        margin: auto auto;
+        width:100%;
+        height: auto;
+    }
+    .five-day h3 {
+        grid-column: 1/6;
+    }
+    .weathersummary {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+    }
+}
+
