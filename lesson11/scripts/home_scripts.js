@@ -99,7 +99,7 @@ fetch(requestURL)
     let cardimg = document.createElement('section');
     let image = document.createElement('img');
     cardimg.classList.add('one');
-    image.setAttribute('src', '/images/' + towns[2].photo);
+    image.setAttribute('src', '/lesson11/images/' + towns[2].photo);
     cardimg.appendChild(image)
     document.querySelector('div.card1').appendChild(cardimg);
 
@@ -127,7 +127,7 @@ fetch(requestURL)
     let cardimg2 = document.createElement('section');
     let image2 = document.createElement('img');
     cardimg2.classList.add('two');
-    image2.setAttribute('src', '/images/' + towns[6].photo);
+    image2.setAttribute('src', '/lesson11/images/' + towns[6].photo);
     cardimg2.appendChild(image2)
     document.querySelector('div.card2').appendChild(cardimg2);
 
@@ -154,7 +154,7 @@ card3.appendChild(rain3);
 let cardimg3 = document.createElement('section');
 let image3 = document.createElement('img');
 cardimg3.classList.add('two');
-image3.setAttribute('src', '/images/' + towns[0].photo);
+image3.setAttribute('src', '/lesson11/images/' + towns[0].photo);
 cardimg3.appendChild(image3)
 document.querySelector('div.card3').appendChild(cardimg3);
   }); 
