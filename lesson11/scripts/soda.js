@@ -1,10 +1,8 @@
-const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=b08bcb8d94b58f5479134fc91470c543&units=imperial';
-const requestURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=b08bcb8d94b58f5479134fc91470c543&units=imperial';
-
-fetch(requestURL)
+function get_current_temp () {
+    const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=b08bcb8d94b58f5479134fc91470c543&units=imperial';
+    fetch(requestURL)
     .then( response => { return response.json(); } )
-    .then(  jsonObject => { 
-        console.table(jsonObject); 
+    .then(  jsonObject => {  
         table = jsonObject;
 
         document.getElementById("description").innerHTML = (table.weather[0].description).toUpperCase();
@@ -14,11 +12,12 @@ fetch(requestURL)
         document.getElementById("humidity").innerHTML = table.main.humidity;
         windChill();
 })
-
-fetch(requestURL2)
+}
+function get_forecast() {
+    const requestURL2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=b08bcb8d94b58f5479134fc91470c543&units=imperial';
+    fetch(requestURL2)
     .then( response => { return response.json(); } )
-    .then(  jsonObject => { 
-        console.table(jsonObject); 
+    .then(  jsonObject => {  
         const fc = jsonObject['list'];
 
         count = 1;
@@ -43,7 +42,10 @@ fetch(requestURL2)
             }
         }
 })
+}
+
 function windChill() {
+    const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=b08bcb8d94b58f5479134fc91470c543&units=imperial';
     fetch(requestURL)
     .then( response => { return response.json(); } )
     .then(  jsonObject => { 
@@ -61,3 +63,23 @@ function windChill() {
     }
 })
 }
+function getEvents() {
+    const requestInfo = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    fetch(requestInfo)
+      .then((response) => response.json())
+      .then((jsonObject) => {
+    const towns = jsonObject['towns'];
+    let card = document.createElement('section');
+    for (i=0; i<towns[0].events.length; i++) {
+        let p = document.createElement('p'); 
+        p.textContent = towns[0].events[i]
+        card.appendChild(p);
+        document.querySelector('div.events').appendChild(card);
+    }
+    });
+}
+window.addEventListener('load', () =>{
+    getEvents();
+    get_current_temp();
+    get_forecast();
+});

@@ -69,13 +69,13 @@ form label.sbs {
     color: #555;
 }
 form input.submitBtn {
-    margin-left: 10px;;
+    margin: 0 auto;
     border: none;
     background-color: #BC6C25;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    width: 95%;
+    width: 100%;
     font-size: 1rem;
     max-width: 100%;
 }
@@ -112,12 +112,15 @@ nav {
 	font-weight: 700;
 }
 .responsive li {
-	display: block;
+    display: block;
+    background-color: #283618;
 }
-
 .navigation a:hover {
     color:black;
-    background-color: #DDA15E
+    background-color: rgba(39, 219, 63, 0.719)
+}
+.navigation responsive {
+    background-color: #283618
 }
 .active {
     background-color: rgba(3, 105, 17, 0.835)

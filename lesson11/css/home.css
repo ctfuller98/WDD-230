@@ -41,17 +41,17 @@ nav {
 	max-width: 100%;
 	background-color: #283618;
 }
-#navigation {
+.navigation {
 	list-style: none;
 	padding: 0;
 }
-#navigation li:first-child {
+.navigation li:first-child {
 	display: block;
 }
-#navigation li {
+.navigation li {
 	display: none;
 }
-#navigation a {
+.navigation a {
 	display: block;
 	padding: 0.75rem;
 	text-align: left;
@@ -60,28 +60,29 @@ nav {
 	font-weight: 700;
 }
 .responsive li {
-	display: block;
+    display: block;
+    background-color: #283618;
 }
-
-#navigation a:hover {
+.navigation a:hover {
     color:black;
-    background-color: #DDA15E
+    background-color: rgba(39, 219, 63, 0.719)
+}
+.navigation responsive {
+    background-color: #283618
 }
 .active {
     background-color: rgba(3, 105, 17, 0.835)
 }
 
-
 /*----------------CARDS ----------------------------------------------*/
 .card1 section, .card2 section, .card3 section {
     background-color: #DDA15E;
     margin: 0 auto;
+
 }
 .card1, .card2, .card3 {
     text-align: center;
     background-color: #DDA15E;
-    
-
 }
 .card1 img, .card2 img, .card3 img {
     width: 90%;
@@ -163,18 +164,18 @@ body {
 nav {
         max-width: 100%;
     }
-#navigation {
+.navigation {
 		display: flex;
         max-width: 100%;
 	}
-#navigation li {
+.navigation li {
 		display: block;
 		flex: 1 1 auto;
 }
-#navigation a {
+.navigation a {
 		text-align: center;
 }
-#navigation li:first-child {
+.navigation li:first-child {
 		display: none;
 }
 h1 {
@@ -190,16 +191,16 @@ h1 {
 .card1, .card2, .card3 {
     display: grid;
 	grid-template-columns: 1fr 1fr;
-    background-color: #606C38;
     margin: 0 auto;
     width: 90%;
     font-size: 1.5rem;
 }
-.card2 section {
+.card2 {
 	max-width: 100%;
     margin: 0 auto;
     grid-column: 1;
     grid-row: 1;
+    background-color: yellow;
 }
 .card2 .cardtwo {
 	grid-column: 2;

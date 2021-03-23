@@ -1,8 +1,9 @@
 window.addEventListener('load', () =>{
     const hambutton = document.querySelector('.ham');
-    const mainnav = document.querySelector('#navigation');
+    const mainnav = document.querySelector('.navigation');
     hambutton.addEventListener('click', ()=> {mainnav.classList.toggle('responsive')},false);
     window.onresize = ()=>{if(window.innerWidth>760) mainnav.classList.remove('responsive');};
+    
     let current_datetime = new Date();
     let month = current_datetime.getMonth()
     let dow = current_datetime.getDay();
@@ -64,8 +65,6 @@ window.addEventListener('load', () =>{
     }   else if (month == 11) {
         month = 'December'
     }
-
-
     let formatted_date = dow + ", " + current_datetime.getDate() + " " +  month  +" " + current_datetime.getFullYear()
     document.getElementById('datetime').innerHTML = formatted_date
     

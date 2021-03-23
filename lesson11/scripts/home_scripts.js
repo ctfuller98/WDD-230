@@ -79,6 +79,7 @@ fetch(requestURL)
 
 /*---------------Fish Haven--------------------------------------------*/
     let card = document.createElement('section');
+    card.classList.add('txt')
     let h2 = document.createElement('h2'); 
     h2.textContent = towns[2].name
     card.appendChild(h2);
@@ -106,7 +107,7 @@ fetch(requestURL)
 
 /*-------------------PRESTON----------------------------------*/
     let card2 = document.createElement('section');
-    card2.classList.add('cardtwo');
+    card2.classList.add('txt')
     let preston = document.createElement('h2'); 
     preston.textContent = towns[6].name
     card2.appendChild(preston);
@@ -133,6 +134,7 @@ fetch(requestURL)
 
 /*----------------------SODA SPRINGS ---------------------------------*/
 let card3 = document.createElement('section');
+card3.classList.add('txt')
 let soda = document.createElement('h2'); 
 soda.textContent = towns[0].name
 card3.appendChild(soda);
