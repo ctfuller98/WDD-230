@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/checkout.css">
+    <title>ICE Checkout</title>
+</head>
+<body>
+    <div class="content">
+        <img src='images/progress-bar.jpg' alt='progress-bar'>
+        <div class="order_summary">
+            <h1>Order Summary</h1>
+            <p class="sub">ORDER SUBTOTAL </p><span>$ 46.95</span>
+            <p class="ship">SHIPPING &amp; HANDLING </p><span>$ 6.00</span>
+            <p class="tax">SALES TAX </p><span>$8.05</span>
+            <hr>
+            <p class='item'>PAYMENT DUE </p><span class='final'>$ 61.00</span>
+            <p class="return"><a href="#">Return to cart</a></p>
+        </div>
+        <div class="payment">
+            <img src='images/visa.jpg' alt = "paypal_visa">
+            <h1>Payment Details</h1>
+                <div class="cardholder">
+                    <label for="fullname">CARDHOLDER NAME</label>
+                    <input id="fullname" type="text" placeholder="Alexis Johnson" maxlength="50" autofocus>
+                </div>
+                <div class="cardnum">
+                    <label for="card">CARD NUMBER</label>
+                    <input id="card" type="text" maxlength="20" placeholder="0123 4567 8901 2345" required>   
+                </div>
+                <div class="expire">
+                    <label for="date">EXPIRATION DATE</label>
+                    <input id="date" type="month" placeholder="Mon/Yr" maxlength="6" required>
+                </div>
+                <div class="cvc">
+                        <label for="cvc">CVV <span class="material-icons">help</span></label>
+                        <input id="cvc" type="password" maxlength="4" placeholder="* * *" required>
+                </div> 
+                <div class="address">
+                    <label for="billing">BILLING ADDRESS</label>
+                    <input id="billing" placeholder="25 Bloor St E, Toronto, ON" required>
+                </div>
+                <div class='checkbox'>
+                    <input id="same" type="checkbox"><label for='same'>Same as shipping address</label>
+                </div>
+               <div class='next'>
+                <button class="button">
+                    NEXT 
+                </button>
+                <p class="cancel">
+                    <a href='#'>Cancel</a>
+                </p>
+               </div>
+                <div class='secured'>
+                    <p id="secure">
+                        <span class="material-icons">
+                            lock
+                        </span>
+                        This is a secure transaction
+                    </p>
+                </div>
+               
+
+        </div>
+       
+</body>
+</html>
