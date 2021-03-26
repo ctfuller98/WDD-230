@@ -75,14 +75,14 @@ nav {
 }
 
 /*----------------CARDS ----------------------------------------------*/
-.card1 section, .card2 section, .card3 section {
+.txt {
     background-color: #DDA15E;
     margin: 0 auto;
-
+    width: 90%;
+    padding: 5px;
 }
 .card1, .card2, .card3 {
     text-align: center;
-    background-color: #DDA15E;
 }
 .card1 img, .card2 img, .card3 img {
     width: 90%;
@@ -100,7 +100,7 @@ footer {
   }
   .title {
     color:black;
-    font-size:rem;
+    font-size:1.2rem;
     margin: auto;
     grid-column: 1/4;
     grid-row: 1/2;
@@ -181,38 +181,46 @@ nav {
 h1 {
     text-align: left;
     margin-left: 50px;
-    font-size: 2.5rem;
+  font-size: 2.5rem;
+}
+.txt {
+    background-color: #283618;
+    color:white;
+    width: 100%;
 }
 .card1 img, .card2 img, .card3 img {
     border-radius: 0px;
-    width: 90%;
     height: 95%;
+    justify-self: center;
 }
 .card1, .card2, .card3 {
     display: grid;
 	grid-template-columns: 1fr 1fr;
+    gap: 10px;
     margin: 0 auto;
     width: 90%;
     font-size: 1.5rem;
+    border:2px solid black;
+    text-align: center;
 }
-.card2 {
+.card2 .txt{
 	max-width: 100%;
     margin: 0 auto;
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1;
-    background-color: yellow;
+    background-color: #283618;
+    color: white;
 }
-.card2 .cardtwo {
-	grid-column: 2;
 }
 
 
 /*-----------------------------LARGE--------------------------------------------
 -------------------------------VIEW---------------------------------------------*/
-@media only screen and (min-width: 54.5em){
-    #navigation {
-        width: 800px;
+@media only screen and (min-width: 54.5em) {
+    .navigation {
+        width: 100%;
         margin: 16px auto; 
+        font-size: 1.7rem;
     }
     .content {
         display: grid;
@@ -223,23 +231,23 @@ h1 {
         grid-column: 1/4;
         grid-row: 1
     }
-    .card1, .card2, .card3{
+    .card1, .card2, .card3 {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: auto;
+        font-size: 2rem;
     }
-    .card2 .cardtwo {
-        grid-row: 1;
+    .card2 .two {
         grid-column: 1/3;
     }
-    .card2 section {
-        grid-row: 2;
+    .card2 .txt {
+        grid-row: 1;
         grid-column: 1/3;
     }
     footer {
         grid-template-columns: auto auto auto auto auto;
         grid-template-rows: auto auto auto auto ;
       }
-      .title {
+    .title {
         color:black;
         font-size:30px;
         margin: auto;
@@ -281,4 +289,3 @@ h1 {
         grid-column: 1/4;
     }
 }
-

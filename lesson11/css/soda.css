@@ -167,7 +167,7 @@ footer {
   }
   .title {
     color:black;
-    font-size:rem;
+    font-size:1.2rem;
     margin: auto;
     grid-column: 1/4;
     grid-row: 1/2;
@@ -284,9 +284,10 @@ footer {
 /*-----------------------------LARGE-----------------------------------------
 --------------------------------VIEW-------------------------------------------*/
 @media only screen and (min-width: 54.5em){
-    #navigation {
+    .navigation {
         width: 100%;
         margin: 16px auto; 
+        font-size: 1.7rem;
     }
     header picture{
         width: 45%;
