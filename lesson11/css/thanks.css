@@ -2,20 +2,25 @@ body {
 	background-color: #FEFAE0;
 	padding: 0;
     max-width: 100%;
-    margin: auto;
+    margin: 0 auto;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;  
 }
+/*-------------HEADER-----------------*/
 header {
 	background-color: #fff;
-	padding: 5px 0;
-	display: flex;
+	display: grid;
+    grid-template-columns: auto auto;
 	align-items:center;
 	justify-content:center;
 }
-header img {
+header picture {
 	width: 80px;
 	height: auto;
+}
+
+header picture img {
+    max-width: 100%;
 }
 .headings {
 	display: flex;
@@ -151,27 +156,20 @@ picture img {
     padding-top:20px;
     margin-top:20px;
   }
-@media only screen and (min-width: 376px){
-    header img {
-		width: 50%;
-    }
-    header {
-        width: 100%;
-    }
-    body {
-        max-width: 100%;
-    }
-
+@media only screen and (min-width: 37.5rem){
+    /*------------HEADER MEDIUM------------------*/
 	.headings h1 {
 		font-size: 2rem;
 	}
-
 	.m {
 		letter-spacing: 1.5pt;
 		font-size: larger;
 		margin-left: 17px;
 	}
-
+	.headings h1 {
+		font-size: 2rem;
+	}
+/*-------------------NAV MEDIUM-----------------------*/
     nav {
         max-width: 100%;
     }
@@ -190,6 +188,7 @@ picture img {
 	.navigation li:first-child {
 		display: none;
 	}
+    /*----------------FOOTER MEDIUM------------------------------*/
     .contact_info {
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
@@ -198,6 +197,8 @@ picture img {
         margin: 0 auto;
     }
 }
+/*------------------------------------LARGE------------------------------------
+--------------------------------------VIEW--------------------------------------*/
 @media only screen and (min-width: 54.5em){
     .content {
         max-width: 90%;
@@ -218,7 +219,7 @@ picture img {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    picture {
+    .storm {
         grid-row: 2/4;
         width: 100%;
         height: 100%;
@@ -226,6 +227,15 @@ picture img {
     .navigation {
         width: 800px;
         margin: 16px auto; 
+    }
+    /*----------------HEADER LARGE-------------------------------*/
+    header {
+        grid-template-columns: 300px auto;
+        grid-template-rows: 245px;
+    }
+    header picture{
+        width: 80%;
+        margin-right: 10px;
     }
     /*---------------------FOOTER LARGE---------------------*/
     .contact_info {
@@ -263,7 +273,7 @@ picture img {
         width:100%;
         height: 100%;
         box-shadow: 0 0 10px #111;
-        border-radius: 3px;
+        border-radius: 10px;
         }
 }
 

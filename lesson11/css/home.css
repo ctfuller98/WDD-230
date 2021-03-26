@@ -8,17 +8,21 @@ body {
 h1 {
     text-align: center;  
 }
-/*-------------HEADING------------------------------*/
+/*-------------HEADER------------------------------*/
 header {
 	background-color: #fff;
-	padding: 5px 0;
-	display: flex;
+	display: grid;
+    grid-template-columns: auto auto;
 	align-items:center;
 	justify-content:center;
 }
-header img {
+header picture {
 	width: 80px;
 	height: auto;
+}
+
+header picture img {
+    max-width: 100%;
 }
 .headings {
 	display: flex;
@@ -92,39 +96,44 @@ nav {
     margin-top: 10px;
     border-radius: 50px;
 }
-/*---------------------FOOTER--------------------------*/
-footer {
+/*--------------------------------FOOTER-----------------------------------*/
+.contact_info {
+    background-color: olive;
+    border: 5px dashed wheat;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto;
-  }
-  .title {
-    color:black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 50px 50px auto auto;
+    color:white;
     font-size:1.2rem;
-    margin: auto;
-    grid-column: 1/4;
-    grid-row: 1/2;
+    margin: 20px auto auto;
+    padding: 15px;
 }
-.facebook{ 
+.contact_info h2 {
+    grid-column: 1/5;
+    justify-self: center;
+    color: white;
+}
+.phone {
+    grid-column: 1/5;
+}
+.email {
+    grid-column:1/5;
+}
+.contact_info h3 {
+    font-size: 1rem;
+    grid-column: 1/5;
+}
+.social { 
+    width: 50px;
+}
+.social img {
+    width:100%;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #111;
     margin: 0 auto;
 }
-.insta {
-    margin: 0 auto;
-}
-.twitter {
-    margin: 0 auto;
-}
-.map{
-    padding: 10px;
-    background-color:white;
-    grid-column: 1/4;
-    grid-row: 3/4;
-    margin: 20px auto;
-    border: 2px solid black;
-    width: 75%;
-}
-.map iframe{
-    width: 100%;
+.contact_info picture {
+    display: none;
 }
   .link a:link{
     text-decoration:none;
@@ -144,23 +153,19 @@ footer {
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------*/
 @media only screen and (min-width: 376px){
-header img {
-		width: 50%;
-    }
-header {
-        width: 100%;
-    }
-body {
-        max-width: 100%;
-    }
+/*------------HEADER MEDIUM------------------*/
 .headings h1 {
-		font-size: 2rem;
+    font-size: 2rem;
 }
 .m {
-		letter-spacing: 1.5pt;
-		font-size: larger;
-		margin-left: 17px;
+    letter-spacing: 1.5pt;
+    font-size: larger;
+    margin-left: 17px;
 }
+.headings h1 {
+    font-size: 2rem;
+}
+/*-------------NAV MEDIUM-----------------*/
 nav {
         max-width: 100%;
     }
@@ -211,12 +216,28 @@ h1 {
     background-color: #283618;
     color: white;
 }
+.contact_info {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+.social {
+    margin: 0 auto;
+}
 }
 
 
 /*-----------------------------LARGE--------------------------------------------
 -------------------------------VIEW---------------------------------------------*/
 @media only screen and (min-width: 54.5em) {
+    /*----------------HEADER LARGE-------------------------------*/
+    header {
+        grid-template-columns: 300px auto;
+        grid-template-rows: 245px;
+    }
+    header picture{
+        width: 80%;
+        margin-right: 10px;
+    }
     .navigation {
         width: 100%;
         margin: 16px auto; 
@@ -243,49 +264,41 @@ h1 {
         grid-row: 1;
         grid-column: 1/3;
     }
-    footer {
-        grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto ;
-      }
-    .title {
-        color:black;
-        font-size:30px;
-        margin: auto;
-        grid-column: 3/6;
-        grid-row: 1/2;
+    .contact_info {
+        grid-template-columns: 75px 75px 75px 200px 1fr;
+        grid-template-rows: 1fr auto auto 1fr 1fr;
+        text-align: left; 
+        height: 300px;
+        max-width: 800px;
     }
-    .facebook{ 
-        margin: 0 auto;
-        grid-column: 3/4;
-        grid-row: 2/3;
+    .contact_info h2 {
+        justify-self:left;
+        grid-row: 1;
     }
-    .insta {
-        margin: 0 auto;
-    }
-    .twitter {
-        margin: 0 auto;
-    }
-    .map{
-        padding: 10px;
-        background-color:white;
-        grid-column: 1/3;
-        grid-row: 1/4;
-        margin: 20px auto;
-        border: 2px solid black;
-        width: 75%;
-    }
-    .map iframe{
-        width: 100%;
-    }
-    .link a:link{
-        text-decoration:none;
-        text-align:center;
-        font-size:12px;
-        padding-top:20px;
-        margin-top:20px;
-    }
-    .time {
-        margin-left: 20px;
+    .phone {
         grid-column: 1/4;
+    }
+    .email {
+        margin-top: 10px;
+        grid-column:1/5;
+    }
+    .contact_info h3 {
+        grid-column: 1/5;
+        font-size:1.1rem
+    }
+    .contact_info picture {
+        display: block;
+        grid-column: 5/6;
+        grid-row: 1/6;
+        width:300px;
+        height: 200px;
+        justify-self: center;
+        margin-top: 20px;
+    }
+    .contact_info picture img {
+        width:100%;
+        height: 100%;
+        box-shadow: 0 0 10px #111;
+        border-radius: 10px;
     }
 }

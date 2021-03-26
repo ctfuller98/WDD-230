@@ -6,16 +6,20 @@ body {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;  
 }
+/*-----------------HEADER ----------------------------------*/
 header {
 	background-color: #fff;
 	display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
 	align-items:center;
 	justify-content:center;
 }
 header picture {
 	width: 80px;
 	height: auto;
+}
+header picture img {
+    max-width: 100%;
 }
 .headings {
 	display: flex;
@@ -34,8 +38,6 @@ header picture {
 }
 /*-----------------NAVIGATION------------------------*/
 nav {
-	margin: 0 auto;
-	max-width: 100%;
 	background-color: #283618;
 }
 .navigation {
@@ -70,7 +72,7 @@ nav {
 .active {
     background-color: rgba(3, 105, 17, 0.835)
 }
-/*---------PAGE content-------------*/
+/*----------------------------PAGE content-------------------------------------------*/
 .content {
     margin-left: auto;
     margin-right: auto;
@@ -78,17 +80,22 @@ nav {
     width: 100%;
 }
 .placeholder-loading {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     border: 2px solid lightgray;
-    background-color: rgba(6, 92, 6, 0.623);
 }
 
-img {
-    width: 80%;
-    height: 80%;
+.placeholder-loading img  {
+    width: 100%;
     background-color: lightgray;
-    margin-top: 20px;
-    margin: 0 auto;
+}
+
+.nine img {
+    width: 100%;
+}
+.nine {
+    text-align: center;
+    padding-bottom: 5px;
 }
 p {
     font-size: 1.2rem;
@@ -100,7 +107,7 @@ h2 {
     color: forestgreen;
     margin-left: 20px;
 }
-/*---------------------FOOTER--------------------------*/
+/*--------------------------------FOOTER-----------------------------------*/
 .contact_info {
     background-color: olive;
     border: 5px dashed wheat;
@@ -151,13 +158,12 @@ h2 {
 }
 /*-----------------------------MEDIUM----------------------------
 --------------------------------VIEW------------------------------*/
-@media only screen and (min-width: 376px){
+@media only screen and (min-width: 37.5rem){
     .content {
         display: grid;
-        grid-gap: 10px;
+        gap: 15px;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
-        margin: auto;
     }
     h2 {
         grid-row: 1;
@@ -165,21 +171,23 @@ h2 {
     }
     .nine {
         grid-column: 1/3;
+        width:75%;
+        margin: 0 auto;
+        border: 2px solid lightgray;
     }
-    header picture  {
-		width: 50%;
+    .placeholder-loading p {
+        padding-top: 10px;
+        margin: 0 auto;
     }
-    header picture img {
-        margin-left: 200px;
+    .nine img {
+        width: 100%;
     }
     body {
         max-width: 100%;
     }
-
 	.headings h1 {
 		font-size: 2rem;
 	}
-
 	.m {
 		letter-spacing: 1.5pt;
 		font-size: larger;
@@ -218,29 +226,34 @@ h2 {
         box-shadow: 0 0 50px #333;
     }
     .content {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
     }
     h2 {
         grid-row: 1/2;
         grid-column: 1/4;
     }
     .nine {
-        border: 2px solid lightgray;
         grid-column: 3/4;
+        width: 100%;
+    }
+    .nine img {
+        width: 100%;
     }
     .navigation {
         width: 100%;
-        margin: 16px auto; 
+        margin: 16px auto;
+        font-size: 1.7rem;
+    }
+    header {
+        grid-template-columns: 300px auto;
+        grid-template-rows: 245px;
     }
     header picture{
-        width: 45%;
-        text-align: right;
-    }
-    header picture img {
-        text-align: right;
+        width: 80%;
+        margin-right: 10px;
     }
     .contact_info {
         grid-template-columns: 75px 75px 75px 200px 1fr;
@@ -277,6 +290,6 @@ h2 {
         width:100%;
         height: 100%;
         box-shadow: 0 0 10px #111;
-        border-radius: 3px;
+        border-radius: 10px;
     }
 }

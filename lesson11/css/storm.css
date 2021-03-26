@@ -2,20 +2,24 @@ body {
 	background-color: #FEFAE0;
 	padding: 0;
     max-width: 100%;
-    margin: auto;
+    margin: 0 auto;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;  
 }
 header {
 	background-color: #fff;
-	padding: 5px 0;
-	display: flex;
+	display: grid;
+    grid-template-columns: auto 1fr;
 	align-items:center;
 	justify-content:center;
 }
-header img {
+header picture {
 	width: 80px;
 	height: auto;
+}
+
+header picture img {
+    max-width: 100%;
 }
 .headings {
 	display: flex;
@@ -179,20 +183,13 @@ nav {
     margin-left: 20px;
     grid-column: 1/4;
 }
-@media only screen and (min-width: 376px){
-    header img {
-		width: 50%;
-    }
+@media only screen and (min-width: 37.5rem){
     header {
         width: 100%;
-    }
-    body {
-        max-width: 100%;
     }
 	.headings h1 {
 		font-size: 2rem;
 	}
-
 	.m {
 		letter-spacing: 1.5pt;
 		font-size: larger;
@@ -225,7 +222,7 @@ nav {
         margin: 0 auto;
     }
 }
-@media only screen and (min-width:  ){
+@media only screen and (min-width:  54.5em){
     .navigation {
         width: 100%;
         margin: 16px auto; 
@@ -237,6 +234,15 @@ nav {
         font-size:12px;
         padding-top:20px;
         margin-top:20px;
+    }
+    /*----------------HEADER LARGE-------------------------------*/
+    header {
+        grid-template-columns: 300px auto;
+        grid-template-rows: 245px;
+    }
+    header picture{
+        width: 80%;
+        margin-right: 10px;
     }
     /*-------------------------FORM--------------------------------*/
       form fieldset {
@@ -315,7 +321,7 @@ nav {
         width:100%;
         height: 100%;
         box-shadow: 0 0 10px #111;
-        border-radius: 3px;
+        border-radius: 10px;
     }
 }
 
