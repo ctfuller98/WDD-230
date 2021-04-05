@@ -1,0 +1,358 @@
+$lightest: #F9F9F9;
+$background: #EEEBDC;
+$bone: #DFDCCD;
+$darkest: #2A3D45;
+$highlight: #FFFF85;
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: $background;
+}
+nav {
+  display: none;
+}
+.sidepanel {
+    height: 300px;
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: $bone;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: black;
+      display: block;
+      transition: 0.3s;
+    }
+    a:hover {
+      color: white;
+    }
+    .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    } 
+  }
+  .openbtn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: $darkest;
+    padding-top: 5px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .slideshow {
+    margin-top: 20px;
+    max-width: 550px;
+    margin: 0 auto;
+    .mySlides {
+      width: 100%;
+    }
+  }
+.heading {
+  display: none;
+}
+.content {
+  margin: 0 auto;
+  max-width: 820px;
+  hr {
+    display:none;
+  }
+  .background {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+    padding: 15px;
+  }
+  .centerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      margin: 0 auto;
+      background-color: $highlight;
+      font-family: 'Playfair Display', serif;
+      padding: 15px;
+      font-size: 1.5em;
+      border: 3px solid black;
+      box-shadow: 0 10px 30px #111;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+button:hover {
+    background-color: $lightest;
+  }
+  .spotlight {
+    margin-top: 50px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #bbb;
+    hr {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    h2 {
+      text-align: center;
+      padding: 15px;
+      margin: 0;
+    }
+    h4 {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    p {
+      margin: 0;
+      border: none;
+      font-size: 1rem;
+      text-align: justify;
+    }
+    .large{
+      display: none;
+    }
+    .small {
+      width: 100%;
+      height: 75%;
+    }
+  }
+}
+hr {
+  margin-top: 20px;
+  width: 75%;
+  
+}
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  color: white;
+  background-color: $darkest;
+  padding: 10px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  img {
+    display: none;
+  }
+  h3 {
+    margin: auto auto;
+    grid-row: 1/4;
+    grid-column: 1/3;
+  }
+  p {
+    font-size: .8rem;
+    margin: 0;
+    .material-icons {
+      font-size: .8rem;
+    }
+  }
+ 
+  .phone {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  .email {
+    grid-column: 3/4;
+    grid-row: 2;
+  }
+  .copyright {
+    grid-column: 3/4;
+    grid-row: 3;
+  }
+}
+/*-----------------------------------MEDIUM--------------------------------------------
+-------------------------------------VIEW-----------------------------------------------*/
+@media only screen and (min-width: 37.5rem){
+
+.openbtn {
+  font-size: 1.8rem;
+  img {
+    width: 60px;
+    height: 60px;
+  }
+} 
+footer { 
+  max-width: 750px;
+  grid-template-columns: 75px 200px auto;
+  grid-template-rows: auto auto auto;
+  img {
+    display: block;
+    width: 100%;
+    grid-row: 1/4;
+    margin: 0 auto
+  }
+  h3 {
+    margin-top: auto;
+    margin-left: 10px;
+    margin-right: 25px;
+    grid-row: 1/4;
+    grid-column: 2/3;
+    font-size: x-large
+  }
+  p {
+    font-size: 1rem;
+    margin: 0;
+    .material-icons {
+      font-size: 1rem;
+    }
+  }
+  .phone {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  .email {
+    grid-column: 3/4;
+    grid-row: 2;
+  }
+  .copyright {
+    grid-column: 3/4;
+    grid-row: 3;
+  }
+}
+}
+
+/*-----------------------------------LARGE------------------------
+-------------------------------------VIEW------------------------*/
+@media only screen and (min-width: 57.5rem){
+.heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  .logo {
+    width: 100%;
+    height: 400px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    z-index: 20;
+    margin: 0 auto;
+  }
+  .background {
+   
+    width: 100%;
+    height: 500px;
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+  
+}
+.openbtn {
+  display: none;
+}
+nav {
+  display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: $darkest;
+  font-size: 1.3rem;
+  ul {
+    ;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    li {
+      flex: 1 1 auto;
+    }
+    a {
+      display: block;
+      padding: 0.75rem;
+      text-align: left;
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      text-align: center;
+    }
+    a:hover {
+      color:black;
+      background-color: $bone
+    }
+    .active {
+      background-color:$lightest;
+      color: black;
+    }
+  }
+}
+
+.content {
+  max-width: none;
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto 100px auto;
+  gap: 10px;
+  hr {
+    display: block;
+    grid-column: 1/4;
+    background-color: black;
+    margin-top: 100px;
+  }
+  .slideshow {
+    grid-column: 2/4;
+    grid-row: 2/5;
+    width: 100%;
+    margin: auto;
+  }
+  h1 {
+    grid-column: 1/4;
+    grid-row: 1;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .spotlight {
+    grid-column: 1/4; 
+    h2 {
+      text-align: left;
+      font-size: 1.8rem;
+    }
+    h4 {
+      text-align: left;
+      padding-left: 10px;
+    }
+    hr {
+      width: 40%;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    .large {
+      display: block;
+      background-color: $bone;
+      float: right;  
+      padding: 10px;
+      margin-top: 30px;
+      margin-left: 15px; 
+      margin-right: 15px;
+      width: 50%;
+      box-shadow: 0 0 20px #111;
+    } 
+    .small {
+      display: none;
+    }
+  }   
+}
+}
+
+
+
+

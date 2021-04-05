@@ -1,0 +1,73 @@
+[
+    {
+        "name":"Albuquerque New Mexico Temple",
+        "phone":"(1) 505-822-5110",
+        "email": "albanmtemple@churchofjesuschrist.org",
+        "address1":"10301 San Francisco Rd NE",
+        "city":"Albuquerque",
+        "state":"NM",
+        "zip":87122,
+        "imageurl":"/FINAL PROJECT/images/alba.jpg",
+        "schedule": "By Appointment Only",
+        "closure":[
+            "2 October 2021",
+            "4 October 2021 - 18 October 2021",
+            "24 November 2021 (Limited Operations)",
+            "25 November 2021",
+            "24 December 2021 - 25 December 2021",
+            "31 December 2021 (Limited Operations)"
+        ]
+    },
+
+    {
+        "name":"Columbus Ohio Temple",
+        "phone":"(+1) 614-351-5001",
+        "email": "columbusohiotemple@churchofjesuschrist.org",
+        "address1":"3870 Gateway Boulevard",
+        "city":"Columbus",
+        "state":"OH",
+        "zip":43228,
+        "imageurl":"/FINAL PROJECT/images/columbus.jpg",
+        "schedule": "Currently Closed for Renovation",
+        "closure": ["N/A"]
+    } ,   
+    {
+        "name":"Palmyra New York Temple",
+        "phone":"315-597-6001",
+        "email": "palmyratemple@churchofjesuschrist.org",
+        "address1":"2720 Temple Rd",
+        "city":"Palmyra",
+        "state":"NY",
+        "zip":14522,
+        "imageurl":"/FINAL PROJECT/images/palmyra.jpg",
+        "schedule": "By Appointment Only",
+        "closure":[
+            "19 April 2021 - 21 April 2021",
+            "20 September 2021 - 27 September 2021",
+            "1 October 2021",
+            "25 November 2021",
+            "24 December 2021",
+            "25 December 2021",
+            "31 December 2021"
+        ]
+    },
+    {
+        "name":"Nauvoo Illinois Temple",
+        "phone":"217-453-6252",
+        "email": "palmyratemple@churchofjesuschrist.org",
+        "address1":"50 N Wells St",
+        "city":"Nauvoo",
+        "state":"IL",
+        "zip":62354,
+        "imageurl":"/FINAL PROJECT/images/nauvoo.jpg",
+        "schedule": "By Appointment Only",
+        "closure":[
+            "8 February  2021 - 14 February 2021",
+            "18 October 2021 - 27 October 2021", 
+            "25 November 2021",
+            "24 December 2021",
+            "25 December 2021",
+            "31 December 2021"
+        ]
+    }
+]
