@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="/FINAL PROJECT/css/reserve.css">
+    <link rel ="stylesheet" href="/FINAL PROJECT/css/contact.css">
     <script src="/FINAL PROJECT/scripts/main.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <title>Services</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <header>
         <div class= "heading">
-            <h1>The Temple Inn and Suites</h1>
-            <picture class='background'>
-                <img src = "/FINAL PROJECT/images/placeholder.jpg" alt = "background">
-            </picture>
+            <img class='background' src = "/FINAL PROJECT/images/columbia.jpg" alt="background" loading = "lazy">
+            <img class = "logo" src = "/FINAL PROJECT/images/logo.png" alt = "logo" loading = "lazy">
         </div>
     </header>
     <main>
+        <nav>
+            <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="reserve.html">Reservations</a></li>
+                <li><a href="temples.html" >Temples</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class = 'active'>Contact Us</a></li>
+                </ul>
+        </nav>
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="home.html">Home</a>
@@ -30,14 +37,48 @@
             <a href="services.html">Services</a>
             <a href="contact.html">Contact Us</a>
           </div>
-            <button class="openbtn" onclick="openNav()">&#9776; <img src='/FINAL PROJECT/images/placeholder.jpg'></button> 
+           <button class="openbtn" onclick="openNav()"><img src='/FINAL PROJECT/images/small_logo.png'></button> 
+            <section>
+                <h1>Contact Us!</h1>
+                <div class="info">
+                    <h3>Contact Us!</h3>
+                    <p><span class="material-icons">local_phone</span> 301-298-1949 </p>
+                    <p><span class="material-icons">mail_outline</span> thetias@anywhere.com </p>
+                    <p><span class="material-icons">place</span> 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank">
+                        <img src="https://cdn.glitch.com/350c922a-f312-4e66-bbcf-4777c7c3c04b%2Ffacebook.png?v=1580405441671" alt="facebook"/></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn.glitch.com/350c922a-f312-4e66-bbcf-4777c7c3c04b%2Finstagram.png?v=1580405441578" alt="Instagram Icon"/></a>
+                        <a href="https://twitter.com/" target="_blank"><img src="https://cdn.glitch.com/350c922a-f312-4e66-bbcf-4777c7c3c04b%2Ftwitter.png?v=1580405441994" alt="Twitter Icon"/></a> </div>
+                        </div>
+                </div>
+               
+                <div class="contact_form">
+                <div class="c-heading">
+                <h1>Get In Touch!</h1>
+                </div>
+                <div class="inputs">
+                <form>
+                <input type="text" placeholder="Full Name"/>	
+                <input type="email" placeholder="Example@gmail.com"/>
+                <textarea name="message" placeholder="Write Message"></textarea>
+                <button>SEND</button>
+                </form>
+                </div>   
+                </div>
+                
+                <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370284854!2d-77.09772048528721!3d38.98325594948481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1617725885560!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                </section> 
     </main>
 <hr>
 <footer>
-<h3>Contact Us!</h3>
-<p class="phone"><span class="material-icons">local_phone</span> 301-298-1949 </p>
-<p class = "email"><span class="material-icons">mail_outline</span> thetias@anywhere.com </p>
-<p class ="copyright">&#169; 2021 The Temple Inn and Suites</p>
+    <img src="/FINAL PROJECT/images/small_logo.png" alt="company logo" loading ="lazy">
+    <h3>Contact Us!</h3>
+    <p class="phone"><span class="material-icons">local_phone</span> 301-298-1949 </p>
+    <p class = "email"><span class="material-icons">mail_outline</span> thetias@anywhere.com </p>
+    <p class ="copyright">&#169; 2021 The Temple Inn and Suites</p>
 </footer>
 </body>
 </html>

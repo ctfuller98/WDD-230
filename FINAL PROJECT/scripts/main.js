@@ -1,14 +1,26 @@
 window.addEventListener('load', () =>{
   openNav()
   closeNav()
-
+  showSlides()
+});
 /*-------------RESPONSIVE MENU------------------*/
 function openNav() {
     document.getElementById("mySidepanel").style.width = "250px";
   }
-  
-  /* Set the width of the sidebar to 0 (hide it) */
   function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
   }
-});
+  var slideIndex = 0;
+  showSlides();
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); 
+  }
+

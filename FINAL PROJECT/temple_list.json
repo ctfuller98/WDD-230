@@ -10,12 +10,12 @@
         "imageurl":"/FINAL PROJECT/images/alba.jpg",
         "schedule": "By Appointment Only",
         "closure":[
-            "2 October 2021",
-            "4 October 2021 - 18 October 2021",
-            "24 November 2021 (Limited Operations)",
-            "25 November 2021",
-            "24 December 2021 - 25 December 2021",
-            "31 December 2021 (Limited Operations)"
+            "2 October ",
+            "4 October - 18 October",
+            "24 November (Limited Operations)",
+            "25 November ",
+            "24 December - 25 December",
+            "31 December (Limited Operations)"
         ]
     },
 
@@ -42,13 +42,13 @@
         "imageurl":"/FINAL PROJECT/images/palmyra.jpg",
         "schedule": "By Appointment Only",
         "closure":[
-            "19 April 2021 - 21 April 2021",
-            "20 September 2021 - 27 September 2021",
-            "1 October 2021",
-            "25 November 2021",
-            "24 December 2021",
-            "25 December 2021",
-            "31 December 2021"
+            "19 April - 21 April",
+            "20 September - 27 September",
+            "1 October",
+            "25 November",
+            "24 December",
+            "25 December",
+            "31 December"
         ]
     },
     {
@@ -62,12 +62,12 @@
         "imageurl":"/FINAL PROJECT/images/nauvoo.jpg",
         "schedule": "By Appointment Only",
         "closure":[
-            "8 February  2021 - 14 February 2021",
-            "18 October 2021 - 27 October 2021", 
-            "25 November 2021",
-            "24 December 2021",
-            "25 December 2021",
-            "31 December 2021"
+            "8 February - 14 February",
+            "18 October - 27 October", 
+            "25 November",
+            "24 December",
+            "25 December",
+            "31 December"
         ]
     }
 ]
