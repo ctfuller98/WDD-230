@@ -151,29 +151,38 @@ footer {
     grid-row: 3;
   }
 }
-.temple {
-  text-align: left;
-  padding: 15px;
-  background-color: $lightest;
-  margin: 0 auto;
-  margin-top: 10px;
-  border: 3px solid $darkest;
-  .weather {
+.content {
     padding: 10px;
-    text-align: center;
-    background-image: linear-gradient($highlight, $bone);
-    border: 2px solid black;
-    border-radius: 50px;
-  }
-  img {
-    padding: 10px;
-    max-width: 100%;
+    max-width: 900px;
     margin: 0 auto;
-  }
-}
-h1 {
-  text-align: center;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    h1 {
+        grid-column: 1/4;
+    }
+    .text {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        font-size: 1.2rem;
+    }
+    .cusine {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .services {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .cake {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    img {
+        width: 90%;
+        height: 90%;
+        margin: 0 auto;
+    }
 }
 @media only screen and (min-width: 37.5rem) {
   footer {
@@ -214,36 +223,34 @@ h1 {
       grid-row: 3;
     }
   }
-  .temple {
-    h2 {
-      margin-bottom: 0;
-    }
-    .info {
-      font-size: 1.3rem;
-    }
-    .weather {
-      font-size: 1.2rem;
-      text-align: left;
-      float: right;
-      margin-top: 30px;
-      margin-left: 15px;
-      margin-right: 15px;
-      width: 50%;
-      box-shadow: 0 0 20px #111;
-    }
-    img {
-      background-color: $bone;
-      float: right;
+  .content {
       padding: 10px;
-      margin-top: 30px;
-      margin-left: 15px;
-      margin-right: 15px;
-      width: 50%;
-      box-shadow: 0 0 20px #111;
-    }
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      gap: 10px;
+      .text {
+          margin-top: 0;
+          grid-column: 1;
+          grid-row: 2/5;
+      }
+      h1 {
+          grid-row: 1;
+      }
+      .cusine {
+          grid-column: 2;
+          grid-row: 2/3;
+      }
+      .services {
+          grid-column: 2;
+          grid-row:3/4;
+      }
+      .cake {
+          grid-column: 2;
+          grid-row: 4/5;
+      }
+                                                                      
   }
 }
-
 /*-----------------------------------LARGE------------------------
   -------------------------------------VIEW------------------------*/
 @media only screen and (min-width: 57.5rem) {
@@ -273,7 +280,6 @@ h1 {
       display: none;
     }
     a {
-      font-weight: 700;
       font-size: 1.3rem;
       flex: 1 1 auto;
       display: block;
@@ -285,7 +291,6 @@ h1 {
       display: block;
       text-align: center;
       .dropbtn {
-        font-weight: 700;
         font-size: 1.3rem;
       }
       .dropdown-content {
@@ -300,57 +305,13 @@ h1 {
       color: black;
     }
   }
-  #temples {
-    max-width: 950px;
-    margin: 0 auto;
-    gap: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    .temple {
-      margin: 0;
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: 5em auto 1fr auto;
-      h2 {
-        grid-column: 1/4;
-        text-align: center;
+  .content {
+      grid-template-rows: auto auto auto auto;
+      .cusine {
+          grid-row: 2/3;
       }
-      img {
-        grid-column: 1/4;
-        grid-row: 2;
-        float: none;
-        padding: 10px;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        margin-bottom: 0;
+      .cake {
+          grid-row: 4/5;
       }
-      .info {
-        grid-row: 3/4;
-        grid-column: 1/4;
-        margin: auto auto;
-        width: fit-content;
-        height: fit-content;
-        font-size: 1.3rem;
-        text-align: justify;
-      }
-      .closure {
-        grid-column: 2/5;
-      }
-      .weather {
-        float: none;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        grid-column: 1/4;
-        grid-row: 4/5;
-        height: fit-content;
-        width: 100%;
-        text-align: center;
-      }
-    }
   }
 }

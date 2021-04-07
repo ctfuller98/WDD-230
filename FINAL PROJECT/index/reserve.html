@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="/FINAL PROJECT/css/reserve.css">
+    <link rel="stylesheet" href="/FINAL PROJECT/css/reserve.css">
     <script src="/FINAL PROJECT/scripts/main.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+    <link rel ="icon" href ="/FINAL PROJECT/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Reservations</title>
 </head>
+
 <body>
     <header>
-        <div class= "heading">
-            <img class='background' src = "/FINAL PROJECT/images/columbia.jpg" alt="background" loading = "lazy">
-            <img class = "logo" src = "/FINAL PROJECT/images/logo.png" alt = "logo" loading = "lazy">
+        <div class="heading">
+            <img class='background' src="/FINAL PROJECT/images/columbia.jpg" alt="background" loading="lazy">
+            <img class="logo" src="/FINAL PROJECT/images/logo.png" alt="logo" loading="lazy">
         </div>
     </header>
     <main>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="reserve.html" class = 'active'>Reservations</a></li>
-                <li><a href="temples.html">Temples</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-        </nav>
-        <div id="mySidepanel" class="sidepanel">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="home.html">Home</a>
-            <a href="reserve.html">Reservations</a>
-            <a href="temples.html">Temples</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact Us</a>
-          </div>
-            <button class="openbtn" onclick="openNav()">&#9776; <img src='/FINAL PROJECT/images/small_logo.png'></button> 
+        <div class="topnav" id="myTopnav">
+            <a href="/FINAL PROJECT/index/home.html">Home</a>
+            <a href="/FINAL PROJECT/index/reserve.html">Reservation</a>
+            <a href="/FINAL PROJECT/index/temples.html">Temples</a>
+            <a href="/FINAL PROJECT/index/contact.html">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services
+                <i class="fa fa-caret-down"></i>
+              </button>
+                <div class="dropdown-content">
+                    <a href="/FINAL PROJECT/index/receptions.html">Wedding Receptions</a>
+                    <a href="/FINAL PROJECT/index/missionaries.html">Temple Missionaries</a>
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="open_nav()"><img src="/FINAL PROJECT/images/small_logo.png" alt="small logo" loading="lazy"> &#9776;</a>
+        </div>
         <div class="content">
-            <form method = "get" action = "thanks.html" id='reservation'>
+            <form method="get" action="thanks.html" id='reservation'>
                 <fieldset>
                     <legend>About Your Stay</legend>
-                    <label class ="top">Location
+                    <label class="top">Location
                         <select name='subject'>
                             <option value =''>Select &#9662;</option>
                             <option value='Palmyra'>Palmyra, NY</option>
@@ -51,10 +52,10 @@
                             <option value='colo'>Colombus, OH</option>
                         </select>
                     </label>
-                    <label class ="top">Check-in Date<input type='date' name ='checkin' required></label>
-                    <label class ="top">Check-out Date<input type='date' name ='checkout'required ></label>
-                    <label class= "top">Number of Guests<input type="number" id="quantity" name="quantity" min="1" required></label>
-                    <label class ="top">Room Options
+                    <label class="top">Check-in Date<input type='date' name ='checkin' required></label>
+                    <label class="top">Check-out Date<input type='date' name ='checkout'required ></label>
+                    <label class="top">Number of Guests<input type="number" id="quantity" name="quantity" min="1" required></label>
+                    <label class="top">Room Options
                         <select name='subject'>
                             <option value =''>Select &#9662;</option>
                             <option value='family'>Family Suite</option>
@@ -66,24 +67,25 @@
                 </fieldset>
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label class ="top">Full Name*<input type="text" name="name" min ="5" required></label>
-                    <label class ="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
-                    <label class ="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label> 
-                    <label class ="top">Home State or Country*<input type="text" name="home" required></label>
+                    <label class="top">Full Name*<input type="text" name="name" min ="5" required></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Home State or Country*<input type="text" name="home" required></label>
                 </fieldset>
-                <div class="submit"><input type='submit' value = "Reserve Now!" class = "submitBtn"></div>
+                <div class="submit"><input type='submit' value="Reserve Now!" class="submitBtn"></div>
             </form>
-            <img class= 'atlanta' src="/FINAL PROJECT/images/atlanta.jpg" alt="atlanta" loading ="lazy">
-            <img class= 'couple' src="/FINAL PROJECT/images/married.jpg" alt="couple at temple" loading ="lazy">
+            <img class='atlanta' src="/FINAL PROJECT/images/atlanta.jpg" alt="atlanta" loading="lazy">
+            <img class='couple' src="/FINAL PROJECT/images/married.jpg" alt="couple at temple" loading="lazy">
         </div>
-        </main>
+    </main>
     <hr>
     <footer>
-        <img src="/FINAL PROJECT/images/small_logo.png" alt="company logo" loading ="lazy">
+        <img src="/FINAL PROJECT/images/small_logo.png" alt="company logo" loading="lazy">
         <h3>Contact Us!</h3>
         <p class="phone"><span class="material-icons">local_phone</span> 301-298-1949 </p>
-        <p class = "email"><span class="material-icons">mail_outline</span> thetias@anywhere.com </p>
-        <p class ="copyright">&#169; 2021 The Temple Inn and Suites</p>
+        <p class="email"><span class="material-icons">mail_outline</span> thetias@anywhere.com </p>
+        <p class="copyright">&#169; 2021 The Temple Inn and Suites</p>
     </footer>
 </body>
+
 </html>
